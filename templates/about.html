@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Health Hub Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        background: linear-gradient(135deg, #ecfdf5, #f0f9ff);
+        font-family: "Poppins", sans-serif;
+        color: #1e293b;
+      }
+
+      /* Navbar */
+      .navbar {
+        background: linear-gradient(90deg, #06b6d4, #10b981);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+      .navbar-brand {
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: #fff !important;
+      }
+      .nav-link {
+        color: #f0fdfa !important;
+        margin: 0 8px;
+        transition: 0.3s;
+      }
+      .nav-link:hover {
+        color: #facc15 !important;
+      }
+
+      /* Hero Section */
+      .hero {
+        text-align: center;
+        padding: 70px 20px;
+        background: linear-gradient(135deg, #d1fae5, #bfdbfe);
+        border-radius: 20px;
+        margin: 30px auto;
+        color: #065f46;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      }
+      .hero h1 {
+        font-weight: 800;
+        font-size: 2.8rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+
+      /* Content Section */
+      .content-card {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+        margin-bottom: 25px;
+      }
+      .content-card h3 {
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #0f766e;
+      }
+      .content-card p {
+        line-height: 1.6;
+        font-size: 1.05rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <img src="{{ url_for('static', filename='img.png') }}" class="rounded-circle me-2" width="45" height="45">
+          Health Hub Center
+        </a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link active fw-bold" href="/about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="/developer">Developer</a></li>
+            <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+      <h1>🌿 About Us</h1>
+      <p>Empowering you with AI-driven healthcare insights for a healthier tomorrow</p>
+    </div>
+
+    <!-- About Content -->
+    <div class="container my-5">
+
+      <div class="content-card">
+        <h3>Our Vision</h3>
+        <p>We envision a world where access to healthcare information is not just a luxury but a fundamental right. Our journey began with a simple yet powerful idea: to empower individuals with the knowledge and tools they need to take control of their health.</p>
+      </div>
+
+      <div class="content-card">
+        <h3>Who We Are</h3>
+        <p>We are a passionate team of healthcare professionals, data scientists, and technology enthusiasts who share a common goal: to make healthcare accessible, understandable, and personalized for you. With years of experience in both healthcare and cutting-edge technology, we've come together to create this platform as a testament to our commitment to your well-being.</p>
+      </div>
+
+      <div class="content-card">
+        <h3>Our Mission</h3>
+        <p>At Health Hub Center, our mission is to provide you with a seamless and intuitive platform that leverages the power of artificial intelligence and machine learning. We want to assist you in identifying potential health concerns based on your reported symptoms, while also enhancing your health literacy.</p>
+      </div>
+
+      <div class="content-card">
+        <h3>How We Do It</h3>
+        <p>Our platform utilizes a robust machine learning model trained on a vast dataset of symptoms and diseases. By inputting your symptoms, our system generates accurate predictions about potential illnesses, allowing you to make informed decisions about your health.</p>
+      </div>
+
+      <div class="content-card">
+        <h3>Your Well-being, Our Priority</h3>
+        <p>Your health is our top priority. That’s why we provide not only accurate predictions but also detailed descriptions, recommended precautions, medications, dietary advice, and workout tips to support your journey to better health.</p>
+      </div>
+
+      <div class="content-card">
+        <h3>Join Us on this Journey</h3>
+        <p>We invite you to explore our platform, engage with our educational content, and take control of your health journey. Together, we can revolutionize the way individuals access and understand healthcare information.</p>
+        <p class="fw-semibold text-success">Thank you for choosing Health Hub Center 💚</p>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
